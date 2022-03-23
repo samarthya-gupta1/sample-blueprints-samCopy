@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Facets/purplle/facets-poc-neo-fh/.idea/facets-poc-neo-fh.iml" filepath="$USER_HOME$/Facets/purplle/facets-poc-neo-fh/.idea/facets-poc-neo-fh.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sample-blueprints.iml" filepath="$PROJECT_DIR$/.idea/sample-blueprints.iml" />
     </modules>
   </component>

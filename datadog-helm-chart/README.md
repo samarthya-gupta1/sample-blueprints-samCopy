@@ -4,4 +4,4 @@ This will deploy following
 
 - VPC
 - Kubernetes Cluster
-- 1 Spring boot Application
+- 1 Datadog helm chart

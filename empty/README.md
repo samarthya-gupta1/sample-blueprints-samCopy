@@ -4,4 +4,5 @@ This will deploy following
 
 - VPC
 - Kubernetes Cluster
-- 1 Spring boot Application
+- No Applications
+
