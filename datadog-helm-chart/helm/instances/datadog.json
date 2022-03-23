@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.facets.cloud/schemas/helm/instances/helm.schema",
+  "flavor": "helm_simple",
+  "spec": {
+    "helm": {
+      "chart": "datadog",
+      "repository": "https://helm.datadoghq.com",
+      "wait": false,
+      "version": "2.30.13"
+    },
+    "env": [
+      {
+        "name": "datadog.apiKey",
+        "type": "secret",
+        "attribute": "DATADOG_API_KEY"
+      },
+      {
+        "name": "datadog.apm.portEnabled",
+        "type": "static",
+        "default": "true"
+      },
+      {
+        "name": "clusterAgent.admissionController.enabled",
+        "type": "static",
+        "default": "true"
+      },
+      {
+        "name": "clusterAgent.admissionController.mutateUnlabelled",
+        "type": "static",
+        "default": "true"
+      }
+    ]
+  }
+}
