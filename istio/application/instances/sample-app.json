@@ -1,0 +1,36 @@
+{
+  "kind": "facets.modules.common.application",
+  "apiVersion": "v2",
+  "metadata": {
+    "labels": {
+      "sidecar.istio.io/inject": "true"
+    }
+  },
+  "spec": {
+    "runtime": {
+      "ports": [
+        {
+          "name": "main",
+          "port": 80
+        }
+      ],
+      "healthCheck": {
+        "portName": "main"
+      },
+      "size": {
+        "namespace": "GENERAL_PURPOSE",
+        "value": "TINY"
+      }
+    },
+    "release": {
+      "strategy": "RollingUpdate",
+      "build": {
+        "image": "nginx:latest"
+      }
+    },
+    "loadbalancing": {
+      "rules": [
+      ]
+    }
+  }
+}

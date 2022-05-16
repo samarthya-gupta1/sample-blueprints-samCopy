@@ -1,0 +1,26 @@
+{
+  "SMALL": {
+  "podCPULimit": 1,
+  "podMemoryLimit": 2
+  }, 
+  "LARGE": {
+  "podCPULimit": 2,
+  "podMemoryLimit": 4
+  }, 
+  "XLARGE": {
+    "podCPULimit": 3,
+    "podMemoryLimit": 6
+  },
+  "XXLARGE": {
+    "podCPULimit": 6,
+    "podMemoryLimit": 10
+  }, 
+  "TINY": {
+    "podCPULimit": 0.5,
+    "podMemoryLimit": 1
+  }, 
+  "MICRO": {
+    "podCPULimit": 0.25,
+    "podMemoryLimit": 0.5
+  }
+}

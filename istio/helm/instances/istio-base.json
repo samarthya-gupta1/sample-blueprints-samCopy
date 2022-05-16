@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.facets.cloud/schemas/helm/instances/helm.schema",
+  "flavor": "helm_simple",
+  "spec": {
+    "helm": {
+      "chart": "base",
+      "repository": "https://istio-release.storage.googleapis.com/charts",
+      "wait": true,
+      "namespace": "istio-system",
+      "recreate_pods" : false
+    },
+    "env": {}
+  }
+}
