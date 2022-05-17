@@ -9,6 +9,27 @@
       "namespace": "istio-system",
       "recreate_pods" : false
     },
-    "env": {}
+    "env": [
+      {
+        "name": "global.proxy.resources.limits.cpu",
+        "type": "static",
+        "default": "100m"
+      },
+      {
+        "name": "global.proxy.resources.limits.memory",
+        "type": "static",
+        "default": "128Mi"
+      },
+      {
+        "name": "global.proxy.resources.requests.cpu",
+        "type": "static",
+        "default": "100m"
+      },
+      {
+        "name": "global.proxy.resources.requests.memory",
+        "type": "static",
+        "default": "128Mi"
+      }
+    ]
   }
 }
