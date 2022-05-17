@@ -9,6 +9,6 @@ FROM python:3.7-alpine
 RUN apk add --update --no-cache bind-tools
 WORKDIR /app
 COPY --from=builder /app /app
-COPY src/ .
+COPY src .
 ENV PATH="/app/.venv/bin:$PATH"
 CMD ["python", "seed.py"]
