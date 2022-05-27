@@ -19,6 +19,11 @@
         "name": "metrics.serviceMonitor.enabled",
         "type": "static",
         "default": "true"
+      },
+      {
+        "name": "auth.enabled",
+        "type": "static",
+        "default": "false"
       }
     ]
   }
