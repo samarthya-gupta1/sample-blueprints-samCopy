@@ -1,6 +1,6 @@
 # sample-redis-blueprint
 
-Example 1: redis with persistence storage, metrics enabled, resource limit for cpu and memory
+Example 1: redis-cluster with persistence storage, metrics enabled, resource limit for cpu and memory
 
 
 ```
