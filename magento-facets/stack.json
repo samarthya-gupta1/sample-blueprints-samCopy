@@ -7,7 +7,10 @@
 
  },
  "clusterVariablesMeta": {
-
+    "MAGENTO_PASSWORD":{
+        "secret" : "true",
+        "value": "dummy"
+    }
  },
  "componentVersions": {
   "KUBERNETES": "1.21"
