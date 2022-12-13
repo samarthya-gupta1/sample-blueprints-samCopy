@@ -1,0 +1,30 @@
+{
+  "kind": "postgres",
+  "flavor": "aurora",
+  "version": "0.2",
+  "lifecycle": "ENVIRONMENT",
+  "disabled": false,
+  "depends_on": [
+  ],
+  "metadata": {
+    "name": "retool-postgres",
+    "tags": {
+      "name": "retool-main"
+    }
+  },
+  "spec": {
+    "postgres_version": "12.11",
+    "size": {
+      "writer": {
+        "instance": "db.t3.medium",
+        "replica_count": 1
+      },
+      "reader": {
+        "instance": "db.t3.medium",
+        "replica_count": 1
+      }
+    }
+  },
+  "advanced": {
+  }
+}

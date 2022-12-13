@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.facets.cloud/schemas/helm/instances/helm.schema",
+  "$schema": "https://facets-cloud.github.io/schemas/helm/instances/helm.schema",
   "disabled": false,
   "flavor": "helm_simple",
   "spec": {
@@ -11,8 +11,6 @@
       "recreate_pods":false,
       "chart": "retool"
     },
-    "env": [
-
-    ]
+    "env": []
   }
 }
