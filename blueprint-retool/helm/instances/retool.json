@@ -9,7 +9,16 @@
       "version": "4.0.0",
       "wait": true,
       "recreate_pods":false,
-      "chart": "retool"
+      "chart": "retool",
+      "values": {
+        "postgresql": {
+          "host": "${postgres.retool-postgress.interfaces.host}",
+          "port": "${postgres.retool-postgress.interfaces.port}",
+          "user": "${postgres.retool-postgress.interfaces.username}",
+          "password": "${postgres.retool-postgress.interfaces.password}",
+          "ssl_enabled": false
+        }
+      }
     },
     "env": []
   }
