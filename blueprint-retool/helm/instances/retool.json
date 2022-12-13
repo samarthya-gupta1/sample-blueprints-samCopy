@@ -12,10 +12,10 @@
       "chart": "retool",
       "values": {
         "postgresql": {
-          "host": "${postgres.retool-postgress.interfaces.host}",
-          "port": "${postgres.retool-postgress.interfaces.port}",
-          "user": "${postgres.retool-postgress.interfaces.username}",
-          "password": "${postgres.retool-postgress.interfaces.password}",
+          "host": "${postgres.retool-postgress.interfaces.writer.host}",
+          "port": "${postgres.retool-postgress.interfaces.writer.port}",
+          "user": "${postgres.retool-postgress.interfaces.writer.username}",
+          "password": "${postgres.retool-postgress.interfaces.writer.password}",
           "ssl_enabled": false
         }
       }
