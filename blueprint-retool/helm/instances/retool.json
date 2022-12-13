@@ -18,7 +18,8 @@
           "port": "${postgres.retool-postgress.interfaces.writer.port}",
           "user": "${postgres.retool-postgress.interfaces.writer.username}",
           "password": "${postgres.retool-postgress.interfaces.writer.password}",
-          "ssl_enabled": false
+          "ssl_enabled": false,
+          "db": "postgres"
         }
       },
       "postgresql": {
