@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.facets.cloud/schemas/helm/instances/helm.schema",
+  "disabled": false,
+  "flavor": "helm_simple",
+  "spec": {
+    "helm": {
+      "namespace": "default",
+      "repository": "https://charts.retool.com",
+      "version": "4.0.0",
+      "wait": true,
+      "recreate_pods":false,
+      "chart": "retool"
+    },
+    "env": [
+
+    ]
+  }
+}
