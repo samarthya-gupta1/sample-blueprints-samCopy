@@ -1,0 +1,25 @@
+{
+    "$schema": "https://facets-cloud.github.io/schemas//helm/instances/helm.schema",
+    "disabled":true,
+    "flavor": "helm_simple",
+    "spec": {
+        "helm": {
+            "repository": "https://charts.bitnami.com/bitnami",
+            "chart": "magento",
+            "namespace": "default",
+            "version": "21.1.x",
+            "timeout": 1200,
+            "wait": true
+        },
+        "env": [],
+        "values": {
+            "autoscaling":{
+                "enabled": true
+            },
+            "magentoPassword":"qwertydehbfgnfghfdfhb"
+           
+        }
+        
+    }
+
+}
