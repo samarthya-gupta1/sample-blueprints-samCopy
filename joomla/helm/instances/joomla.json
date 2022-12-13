@@ -15,10 +15,10 @@
 				"enabled": false
 			},
 			"externalDatabase": {
-				"host": "${mysql.joomlamysq.interfaces.writer.host}",
-				"port": "${mysql.joomlamysq.interfaces.writer.port}",
-				"user": "${mysql.joomlamysq.interfaces.writer.username}",
-				"password": "${mysql.joomlamysq.interfaces.writer.password}",
+				"host": "${mysql.mysql-joomla.interfaces.writer.host}",
+				"port": "${mysql.mysql-joomla.interfaces.writer.port}",
+				"user": "${mysql.mysql-joomla.interfaces.writer.username}",
+				"password": "${mysql.mysql-joomla.interfaces.writer.password}",
 				"database": "joomla_db"
 			}
 		}
