@@ -1,0 +1,49 @@
+{
+  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
+  "disabled": true,
+  "version": "0.1",
+  "metadata": {},
+  "flavor": "aws",
+  "kind": "service",
+  "spec": {
+    "env": {
+      "POSTGRES_HOST": "${postgres.retool-postgress.interfaces.writer.host}",
+      "POSTGRES_PORT": "${postgres.retool-postgress.interfaces.writer.port}",
+      "POSTGRES_USER": "${postgres.retool-postgress.interfaces.writer.username}",
+      "POSTGRES_PASSWORD": "${postgres.retool-postgress.interfaces.writer.password}"
+    },
+    "type": "application",
+    "enable_host_anti_affinity": true,
+    "release": {
+      "image": "tryretool/backend",
+      "strategy": {
+        "type": "Recreate"
+      }
+    },
+    "runtime": {
+      "volumes": {
+      },
+      "ports": {
+        "http": {
+          "port": 3000,
+          "protocol": "tcp"
+        }
+      },
+      "size": {
+        "cpu": "100m",
+        "memory": "100m"
+      },
+      "health_checks": {
+        "start_up_time": 10,
+        "timeout": 100,
+        "period": 10,
+        "port": 80
+      }
+    }
+  },
+  "advanced": {
+    "aws": {
+
+    }
+  }
+}
