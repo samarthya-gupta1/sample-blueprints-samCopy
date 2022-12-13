@@ -3,7 +3,7 @@
   "flavor": "aurora",
   "version": "0.1",
   "lifecycle": "ENVIRONMENT",
-  "disabled": false,
+  "disabled": true,
   "depends_on": [
   ],
   "metadata": {

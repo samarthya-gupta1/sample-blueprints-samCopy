@@ -1,6 +1,6 @@
 {
   "$schema": "https://facets-cloud.github.io/schemas/helm/instances/helm.schema",
-  "disabled": false,
+  "disabled": true,
   "flavor": "helm_simple",
   "spec": {
     "helm": {

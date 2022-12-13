@@ -1,0 +1,22 @@
+{
+  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/loadbalancer/loadbalancer.schema.json",
+  "disabled": true,
+  "metadata": {
+    "name": "retool"
+  },
+  "flavor": "aws_alb",
+  "kind": "ingress",
+  "version": "0.1",
+  "spec": {
+    "private": false,
+    "force_ssl_redirection": true,
+    "rules":{
+      "retool":{
+        "domain_prefix": "retool",
+        "path": "/*",
+        "port": 3000,
+        "service_name": "retool"
+      }
+    }
+  }
+}
