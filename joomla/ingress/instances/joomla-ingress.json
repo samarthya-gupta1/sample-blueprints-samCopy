@@ -1,0 +1,21 @@
+{
+  "disabled": true,
+  "metadata": {
+    "name": "joomla-ingress"
+  },
+  "flavor": "aws_alb",
+  "kind": "ingress",
+  "version": "0.1",
+  "spec": {
+    "private": false,
+    "force_ssl_redirection": true,
+    "rules":{
+      "joomla":{
+        "domain_prefix": "joomla",
+        "path": "/*",
+        "port": 80,
+        "service_name": "joomla"
+      }
+    }
+  }
+}
