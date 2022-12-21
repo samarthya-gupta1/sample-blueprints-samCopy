@@ -43,7 +43,14 @@
         }
       },
       "env": {
-
+        "MAGENTO_HOST": "${ingress.magento-ingress.domain}",
+        "MAGENTO_DATABASE_HOST": "${mysql.magento-mysql.out.interfaces.writer.host}",
+        "MAGENTO_DATABASE_USER": "${mysql.magento-mysql.out.interfaces.writer.username}",
+        "MAGENTO_DATABASE_PASSWORD": "${mysql.magento-mysql.out.interfaces.writer.password}",
+        "MYSQL_CLIENT_FLAVOUR": "mysql",
+        "MYSQL_CLIENT_DATABASE_HOST": "${mysql.magento-mysql.out.interfaces.writer.host}",
+        "MYSQL_CLIENT_DATABASE_ROOT_USER": "${mysql.magento-mysql.out.interfaces.writer.username}",
+        "MYSQL_CLIENT_DATABASE_ROOT_PASSWORD": "${mysql.magento-mysql.out.interfaces.writer.password}"
       },
       "restart_policy": "OnFailure"
     },
