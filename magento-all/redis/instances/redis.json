@@ -1,0 +1,20 @@
+{
+  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/redis/redis.schema.json",
+  "flavor": "k8s",
+  "disabled": false,
+  "kind": "redis",
+  "version": "0.1",
+  "spec": {
+    "authenticated": false,
+    "persistence_enabled": false,
+    "redis_version": "6.2",
+    "size": {
+      "reader": {
+        "cpu": "500m",
+        "memory": "2Gi",
+        "replica_count": 0,
+        "volume": "10Gi"
+      }
+    }
+  }
+}
