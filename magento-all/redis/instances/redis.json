@@ -9,7 +9,7 @@
     "persistence_enabled": false,
     "redis_version": "6.2",
     "size": {
-      "reader": {
+      "writer": {
         "cpu": "500m",
         "memory": "2Gi",
         "replica_count": 0,
