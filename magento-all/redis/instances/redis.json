@@ -12,9 +12,15 @@
       "writer": {
         "cpu": "500m",
         "memory": "2Gi",
-        "replica_count": 0,
+        "replica_count": 1,
         "volume": "10Gi"
+      },
+      "reader": {
+        "replica_count": 0
       }
     }
+  },
+  "metadata": {
+
   }
 }
