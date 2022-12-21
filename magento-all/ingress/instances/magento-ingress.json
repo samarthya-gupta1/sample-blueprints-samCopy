@@ -1,9 +1,6 @@
 {
     "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/loadbalancer/loadbalancer.schema.json",
-    "disabled": true,
-    "metadata": {
-        "name": "magento"
-    },
+    "disabled": false,
     "flavor": "nginx_ingress_controller",
     "kind": "ingress",
     "version": "0.1",
