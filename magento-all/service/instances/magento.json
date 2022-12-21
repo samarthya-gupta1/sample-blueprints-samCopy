@@ -17,7 +17,7 @@
             "max_available": 1,
             "max_unavailable": 0
         },
-        "image": ""
+        "image": "docker.io/bitnami/magento:2.4.5-p"
       },
       "runtime": {
         "health_checks": {
