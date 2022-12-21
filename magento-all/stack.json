@@ -1,0 +1,18 @@
+{
+ "$schema": "https://docs.facets.cloud/schemas/stack.schema",
+ "composition": {
+  "plugins": []
+ },
+ "stackVariables": {
+
+ },
+ "clusterVariablesMeta": {
+    "MAGENTO_PASSWORD":{
+        "secret" : "true",
+        "value": "dummy"
+    }
+ },
+ "componentVersions": {
+  "KUBERNETES": "1.21"
+ }
+}

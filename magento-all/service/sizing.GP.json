@@ -1,0 +1,34 @@
+{
+  "TINY": {
+    "podCPULimit": 0.125,
+    "podMemoryLimit": 0.5
+  }, 
+  "MICRO": {
+    "podCPULimit": 0.250,
+    "podMemoryLimit": 1
+  },
+  "SMALL": {
+  "podCPULimit": 0.5,
+  "podMemoryLimit": 2
+  }, 
+  "LARGE": {
+  "podCPULimit": 1,
+  "podMemoryLimit": 4
+  }, 
+  "XLARGE": {
+    "podCPULimit": 1.5,
+    "podMemoryLimit": 6
+  },
+  "2XLARGE": {
+    "podCPULimit": 2,
+    "podMemoryLimit": 8
+  },
+  "3XLARGE": {
+    "podCPULimit": 4,
+    "podMemoryLimit": 16
+  },
+  "4XLARGE": {
+    "podCPULimit": 8,
+    "podMemoryLimit": 32
+  }
+}

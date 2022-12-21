@@ -1,0 +1,22 @@
+{
+    "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/loadbalancer/loadbalancer.schema.json",
+    "disabled": true,
+    "metadata": {
+        "name": "magento"
+    },
+    "flavor": "nginx_ingress_controller",
+    "kind": "ingress",
+    "version": "0.1",
+    "spec": {
+     "private": false,
+     "force_ssl_redirection": true,
+     "rules":{
+        "magento":{
+            "domain_prefix": "app",
+            "path": "/*",
+            "port": 8080,
+            "service_name": "magento"
+        }
+     }
+    }
+}
