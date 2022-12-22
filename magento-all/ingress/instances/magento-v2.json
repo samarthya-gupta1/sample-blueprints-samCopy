@@ -1,0 +1,22 @@
+{
+	"flavor": "aws_alb",
+	"metadata": {
+		"name": "magento-v2"
+	},
+	"kind": "ingress",
+	"disabled": false,
+	"version": "0.2",
+	"spec": {
+		"private": true,
+		"force_ssl_redirection": true,
+		"rules": {
+			"magento-1": {
+				"domain_prefix": "app",
+				"path": "/*",
+				"port": 8080,
+				"service_name": "magento"
+			}
+		}
+	}
+}
+
