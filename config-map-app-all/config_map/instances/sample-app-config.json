@@ -1,0 +1,23 @@
+{
+   "kind": "config_map",
+   "flavor": "default",
+   "version": "0.1",
+   "disabled": false,
+   "provided": true,
+   "metadata": {
+      "name": "sample-app-config"
+   },
+   "spec": {
+      "data": {
+         "db_config": {
+            "host": "${mysql.mysql-main.out.interfaces.writer.host}",
+            "user": "${mysql.mysql-main.out.interfaces.writer.username}",
+            "password": "${mysql.mysql-main.out.interfaces.writer.password}",
+            "port": "${mysql.mysql-main.out.interfaces.writer.port}}"
+         }
+      }
+   },
+   "advanced": {
+      "k8s": {}
+   }
+}
