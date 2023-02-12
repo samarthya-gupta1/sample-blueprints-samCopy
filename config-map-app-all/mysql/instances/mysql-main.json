@@ -11,11 +11,11 @@
       "mysql_version": "8.0",
       "size": {
         "writer": {
-          "instance_count": 1,
+          "replica_count": 1,
           "instance": "db.t4g.medium"
         },
         "reader": {
-          "instance_count": 1,
+          "replica_count": 0,
           "instance": "db.t4g.medium"
         }
       }
