@@ -42,12 +42,12 @@
             "health_checks": {
                 "start_up_time": 15,
                 "period": 15,
-                "port": 9977,
+                "port": 80,
                 "timeout": 3
             },
             "ports": {
                 "main": {
-                    "port": 9977,
+                    "port": 80,
                     "protocol": "tcp"
                 }
             }
