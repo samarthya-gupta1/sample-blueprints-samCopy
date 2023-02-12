@@ -15,7 +15,7 @@
           "instance": "db.t4g.medium"
         },
         "reader": {
-          "replica_count": 0,
+          "replica_count": 1,
           "instance": "db.t4g.medium"
         }
       }
