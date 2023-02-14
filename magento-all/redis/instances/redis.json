@@ -11,9 +11,9 @@
     "size": {
       "writer": {
         "cpu": "500m",
-        "memory": "2Gi",
+        "memory": "1Gi",
         "replica_count": 1,
-        "volume": "10Gi"
+        "volume": "5Gi"
       },
       "reader": {
         "replica_count": 0
