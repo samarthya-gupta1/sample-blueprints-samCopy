@@ -1,0 +1,28 @@
+{
+    "flavor": "nginx_ingress_controller",
+    "version": "0.1",
+    "kind": "ingress",
+    "disabled": false,
+    "metadata": {
+      "name": "only",
+      "annotations": {}
+    },
+    "spec": {
+      "basicAuth": false,
+      "private": false,
+      "domains": {
+      },
+      "rules": {
+        "all-traffic": {
+          "service_name": "${service.orangehrm.out.interfaces.main.name}",
+          "path": "/*",
+          "port_name": "http",
+          "port": "${service.orangehrm.out.interfaces.main.port}",
+          "domain_prefix": ""
+        }
+      },
+      "force_ssl_redirection": true
+    },
+    "advanced": {
+    }
+  }

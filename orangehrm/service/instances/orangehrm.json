@@ -1,0 +1,52 @@
+{
+    "flavor": "default",
+    "metadata": {
+        "name": "orangehrm"
+    },
+    "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
+    "kind": "service",
+    "disabled": false,
+    "version": "0.1",
+    "spec": {
+        "type": "application",
+        "enable_host_anti_affinity": false,
+        "release": {
+            "image": "nginx:latest",
+            "disruption_policy": {
+                "max_unavailable": 0
+            },
+            "strategy": {
+                "type": "RollingUpdate",
+                "max_available": 1,
+                "max_unavailable": 0
+            }
+        },
+        "runtime": {           
+            "size": {
+                "cpu": "300m",
+                "memory": "1Gi"
+            },
+            "autoscaling": {
+                "min": 1,
+                "max": 1,
+                "cpu_threshold": 50
+            },
+            "health_checks": {
+                "start_up_time": 15,
+                "period": 15,
+                "port": 80,
+                "timeout": 3
+            },
+            "ports": {
+                "main": {
+                    "port": 80,
+                    "protocol": "tcp"
+                }
+            }
+        },
+        "restart_policy": "OnFailure",
+        "env": {
+            "SAMPLE_ENV": "Static Value"
+        }
+    }
+}

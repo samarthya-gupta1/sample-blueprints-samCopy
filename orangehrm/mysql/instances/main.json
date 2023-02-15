@@ -1,0 +1,30 @@
+{
+    "kind": "mysql",
+    "flavor": "rds",
+    "version": "0.1",
+    "disabled": false,
+    "metadata": {
+      "name": "main",
+      "tags": {}
+    },
+    "spec": {
+      "mysql_version": "5.7",
+      "size": {
+        "writer": {
+          "replica_count": 1,
+          "instance": "db.t4g.medium"
+        },
+        "reader": {
+          "replica_count": 1,
+          "instance": "db.t4g.medium"
+        }
+      }
+    },
+    "advanced": {
+        "rds": {
+            "rds-mysql": {
+              
+            }
+        }
+    }
+}
