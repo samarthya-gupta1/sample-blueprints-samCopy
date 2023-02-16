@@ -1,5 +1,5 @@
 {
-    "flavor": "nginx_ingress_controller",
+    "flavor": "nlb_nginx",
     "version": "0.1",
     "kind": "ingress",
     "disabled": false,

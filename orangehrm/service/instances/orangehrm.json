@@ -11,7 +11,7 @@
         "type": "application",
         "enable_host_anti_affinity": false,
         "release": {
-            "image": "nginx:latest",
+            "image": "orangehrm/orangehrm:5.3",
             "disruption_policy": {
                 "max_unavailable": 0
             },
