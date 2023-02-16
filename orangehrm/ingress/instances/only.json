@@ -16,7 +16,6 @@
         "all-traffic": {
           "service_name": "${service.orangehrm.out.interfaces.main.name}",
           "path": "/*",
-          "port_name": "http",
           "port": "${service.orangehrm.out.interfaces.main.port}",
           "domain_prefix": ""
         }
