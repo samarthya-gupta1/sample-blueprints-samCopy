@@ -8,7 +8,7 @@
       "tags": {}
     },
     "spec": {
-      "mysql_version": "5.7",
+      "mysql_version": "8",
       "size": {
         "writer": {
           "replica_count": 1,
