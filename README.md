@@ -1,2 +1,2 @@
 # sample-blueprints
-Sample Blueprints for Facets stacks
+Sample Blueprints for Facets stacks.
