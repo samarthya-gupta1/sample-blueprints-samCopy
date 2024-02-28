@@ -46,7 +46,8 @@
       "volumes": {}
     },
     "env": {
-      "LOG_LEVEL": "INFO"
+      "LOG_LEVEL": "INFO",
+      "DB_USER": "${postgres.react-express-postgres.out.interfaces.writer.username}"
     }
   }
 }
