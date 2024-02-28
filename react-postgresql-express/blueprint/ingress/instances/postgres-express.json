@@ -20,7 +20,7 @@
       "expressApp": {
         "service_name": "${service.control-plane-backend.out.interfaces.http.name}",
         "path": "/",
-        "port": 80,
+        "port": "${service.control-plane-backend.out.interfaces.http.port}",
         "domain_prefix": "",
         "annotations": {
           "app": ""
