@@ -18,9 +18,9 @@
     "domains": {},
     "rules": {
       "expressApp": {
-        "service_name": "${service.control-plane-backend.out.interfaces.http.name}",
+        "service_name": "${service.rpe-backend.out.interfaces.http.name}",
         "path": "/",
-        "port": "${service.control-plane-backend.out.interfaces.http.port}",
+        "port": "${service.rpe-backend.out.interfaces.http.port}",
         "domain_prefix": "",
         "annotations": {
           "app": ""
