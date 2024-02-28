@@ -47,7 +47,11 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "DB_USER": "${postgres.react-express-postgres.out.interfaces.writer.username}"
+      "DB_USER": "${postgres.react-express-postgres.out.interfaces.writer.username}",
+      "DB_PASSWORD": "${postgres.react-express-postgres.out.interfaces.writer.password}",
+      "DB_HOST": "${postgres.react-express-postgres.out.interfaces.writer.host}",
+      "DB_PORT": "${postgres.react-express-postgres.out.interfaces.writer.port}",
+      "DB_NAME": "${postgres.react-express-postgres.out.interfaces.writer.name}"
     }
   }
 }
