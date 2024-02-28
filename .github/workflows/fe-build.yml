@@ -39,7 +39,7 @@ jobs:
           tags: app/reactjs-petclinic:${{ github.run_id }}
 
       - name: Login to facetsctl
-        run: facetsctl login -u samarthya@facets.cloud-t 299def0a-c888-4fef-90f0-6b0632b92eae -c https://facetsdemo.console.facets.cloud
+        run: facetsctl login -u samarthya@facets.cloud -t 299def0a-c888-4fef-90f0-6b0632b92eae -c https://facetsdemo.console.facets.cloud
 
       - name: Push Image using facetsctl
         run:  facetsctl push -i app/reactjs-petclinic:${{ github.run_id }} -a reactjs-petclinic-CI -e reactjs@${GITHUB_RUN_ID} --registration-type=RELEASE_STREAM --registration-value=DEV --artifactory facets-config-auto
