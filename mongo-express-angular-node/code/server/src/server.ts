@@ -1,6 +1,29 @@
+import * as dotenv from "dotenv";
+import cors from "cors";
+import { connectToDatabase } from "./database";
+import { todoRouter } from "./todo.route";
 var express = require("express");
-var app = express();
 
-app.listen(5200, () => {
-  console.log(`Server running at http://localhost:5200...`);
-});
+// Load environment variables from the .env file, where the MONGO_DB_URI is configured
+dotenv.config();
+const { MONGO_DB_URI } = process.env;
+
+if (!MONGO_DB_URI) {
+  console.error(
+    "No MONGO_DB_URI environment variable has been defined in config.env"
+  );
+  process.exit(1);
+}
+
+connectToDatabase(MONGO_DB_URI)
+  .then(() => {
+    var app = express();
+    app.use(cors());
+    app.use("/api", todoRouter);
+
+    // start the Express server
+    app.listen(5200, () => {
+      console.log(`Server running at http://localhost:5200...`);
+    });
+  })
+  .catch((error) => console.error(error));

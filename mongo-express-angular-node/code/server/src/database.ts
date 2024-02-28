@@ -6,11 +6,18 @@ export const collections: {
 } = {};
 
 export async function connectToDatabase(uri: string) {
+  console.log("Connection string is ", uri);
   const client = new mongodb.MongoClient(uri);
-  await client.connect();
+  try {
+    // const client = new mongodb.MongoClient(uri);
+    await client.connect();
 
-  const db = client.db("todo-list-collection");
+    const db = client.db("todo-list-collection");
 
-  const employeesCollection = db.collection<Task>("tasks");
-  collections.tasks = employeesCollection;
+    const employeesCollection = db.collection<Task>("tasks");
+    collections.tasks = employeesCollection;
+    console.log("Connected to the database");
+  } finally {
+    await client.close();
+  }
 }
