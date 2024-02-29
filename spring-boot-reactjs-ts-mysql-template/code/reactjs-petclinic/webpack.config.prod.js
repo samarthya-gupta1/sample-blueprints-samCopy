@@ -11,6 +11,7 @@ const entries = [
 module.exports = {
   devtool: 'source-map',
   entry: entries,
+  public:true,
   output: {
     path: path.join(__dirname, 'public/dist/'),
     filename: 'bundle.js',
